@@ -1,0 +1,186 @@
+:root {
+	--bg-primary: #F5EBDC;
+	--bg-secondary: #502314;
+	--footer-primary: #2B0200;
+	--button-primary: #D82300;
+	--button-secondary-light: #DE4F33;
+	--button-secondary-dark: #A71B00;
+	--serif-stack: "Flame", "Cooper Black", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--sans-stack: "Flame Sans", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+}
+
+@font-face {
+	font-family: "Flame";
+	src: url(Flame-Regular.woff2);
+}
+
+@font-face {
+	font-family: "Flame Sans";
+	src: url(FlameSans-Regular.woff2);
+}
+
+* {
+	color: var(--bg-secondary);
+}
+
+html, body {
+	margin: 0px;
+	font-family: var(--serif-stack);
+	background-color: var(--bg-primary);
+}
+
+a {
+	text-decoration: none;
+}
+
+.header {
+	background-color: var(--bg-primary);
+	display: flex;
+	justify-content: space-between;
+	height: 75px;
+	position: sticky;
+	top: 0;
+}
+
+.header > div {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	padding: 0px 20px;
+}
+.header > div > * {
+	margin: 0px 10px;
+}
+
+.header-logo {
+	position: absolute;
+	align-items: normal;
+	left: 50%;
+	transform: translate(-50%, 8px);
+	width: 55px;
+	height: 60px;
+}
+
+.header a {
+	font-size: 1.15em;
+}
+.header a:hover {
+	color: var(--button-primary);
+	font-weight: bold;
+}
+
+.header-more-button {
+	cursor: pointer;
+	font-size: 1.15em;
+}
+.header-more-button:hover {
+	color: var(--button-primary);
+}
+
+.header-location-buttons {
+	display: flex;
+	flex-direction: row;
+}
+.header-location-buttons:hover {
+	font-weight: normal !important;
+}
+
+.header-location-button {
+	text-decoration: underline;
+	font-family: var(--sans-stack);
+	font-size: 0.8em;
+	margin: auto 10px;
+}
+.header-location-button:hover {
+	color: var(--bg-secondary);
+	text-decoration: none;
+}
+
+.location-icon {
+	fill: var(--bg-secondary);
+	width: 20px;
+	height: 20px;
+	margin-right: 8px;
+}
+
+.account-button {
+	fill: var(--bg-secondary);
+	width: 24px;
+	height: 24px;
+}
+
+.basket-icon {
+	width: 16px;
+	height: 16px;
+}
+
+.banner {
+	background-color: var(--bg-secondary);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+}
+
+.banner * {
+	color: var(--bg-primary);
+}
+
+.banner img {
+	width: 200px;
+	height: auto;
+}
+
+.banner-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 20px;
+}
+
+.learn-more-button {
+	background-color: var(--bg-secondary) !important;
+	border: 1px solid var(--bg-primary);
+	display: flex;
+	margin: auto 8px;
+	padding: 0px 4px !important;
+}
+.learn-more-button a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto 0px;
+}
+.learn-more-button div {
+	margin: auto 8px;
+}
+.learn-more-button:hover {
+	background-color: #F0CDBB !important;
+}
+
+.learn-more-icon {
+	width: 21px;
+	height: 21px;
+}
+
+.button-round {
+	border-radius: 999px;
+	padding: 0px 16px;
+	font-size: 0.9rem;
+	height: 2em;
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	background-color: var(--button-primary);
+	color: var(--bg-primary);
+	fill: var(--bg-primary);
+	transition: background-color 0.1s;
+}
+.button-round:hover {
+	background-color: var(--button-secondary-dark);
+	font-weight: normal;
+}
+.button-round > * {
+	color: var(--bg-primary);
+	margin: auto 4px;
+}
